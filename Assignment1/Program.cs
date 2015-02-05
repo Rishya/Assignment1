@@ -14,6 +14,10 @@ namespace Assignment1
             Hero myHero = new Hero("Girl");
             myHero.show();
             myHero.fight();
+
+            SuperHero mySuperHero = new SuperHero("SuperGirl");
+            mySuperHero.showPowers();
+            mySuperHero.fight();
            
 
             // Wait for output before closing console.           
