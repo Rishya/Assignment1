@@ -54,13 +54,14 @@ namespace Assignment1
             }
             else
             {
+                Console.WriteLine("Hit was unsuccessfull :(");
                 return false;
             }
         }
         private int hitDamage()             
         {
             int damage = (strength * r.Next(1, 6));
-            Console.WriteLine("The damage caused to the target is {0}", damage);
+            Console.WriteLine("Hit was successfull! The damage caused to the target is {0}", damage);
             return damage;
         }
        
@@ -72,9 +73,10 @@ namespace Assignment1
         
         public void show()
         {
-            Console.WriteLine("The strength is {0}", strength);
-            Console.WriteLine("The speed is {0}", speed);
-            Console.WriteLine("The health is {0}", health);
+            Console.WriteLine("The heros strength is {0}", strength);
+            Console.WriteLine("The heros speed is {0}", speed);
+            Console.WriteLine("The heros health is {0}", health);
+            Console.WriteLine("");
         }
     }
 }
